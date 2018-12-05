@@ -26,7 +26,7 @@ soils <- soils_raw %>%
   summarise(average = mean(soil_pH))
 
 # Saving cleaned dataframe as a csv file 
-write.csv(soils, file = "int-pdt/soils-cleaned.csv")
+write.csv(soils, file = "intermediate-products/soils-cleaned.csv")
 
 # Creating a boxplot ---- 
 
@@ -46,4 +46,4 @@ write.csv(soils, file = "int-pdt/soils-cleaned.csv")
          legend.position = "none"))    
 
 # Using ggsave to save our boxplot as a png file
-ggsave(boxplot, file = "final-pdt/boxplot.png")
+ggsave(boxplot, file = "final-products/boxplot.png")
